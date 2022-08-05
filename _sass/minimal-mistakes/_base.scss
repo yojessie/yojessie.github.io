@@ -343,8 +343,7 @@ input[type="submit"],
 
 /* image caption css */
 img {
-  margin-bottom: 8px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   border: 4px solid #f2f2f2;
 }
 
@@ -353,5 +352,8 @@ img + em {
   text-align: center;
   font-size: .8rem;
   color: #91939C;
+  background-color: #f4f4f4;
+  padding: 6px 16px 10px 16px;
+  border-radius: 0 0 8px 8px;
 }
 
