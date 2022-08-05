@@ -342,10 +342,11 @@ body {
   display: inline-block;
   margin-right: 5px;
   margin-bottom: 8px;
-  padding: 5px 10px;
+  padding: 2px 8px;
   text-decoration: none;
-  border: 1px solid mix(#000, $border-color, 25%);
+  border: 1px solid #dddddd;
   border-radius: $border-radius;
+  background-color: #f5f5f5;
 
   &:hover {
     text-decoration: none;
