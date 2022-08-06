@@ -343,12 +343,14 @@ input[type="submit"],
 
 /* image caption css */
 img {
+  width: 100%;
   border-radius: 8px 8px 0 0;
   border: 4px solid #f2f2f2;
 }
 
 img + em {
   display: block;
+  width: 100%;
   text-align: center;
   font-size: .8rem;
   color: #91939C;
