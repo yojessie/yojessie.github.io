@@ -182,7 +182,7 @@
   a {
     display: block;
     margin: 0 1rem;
-    color: $masthead-link-color;
+    color: #555555; // 원래는 $masthead-link-color
     text-decoration: none;
     -webkit-transition: none;
     transition: none;
