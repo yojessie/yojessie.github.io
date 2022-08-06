@@ -1,0 +1,76 @@
+---
+title: "[Blog] 깃헙 블로그 파비콘 등록하기"
+excerpt: "생각보다 간단하게 블로그 파비콘을 등록할 수 있다."
+
+categories:
+  - Blog
+tags:
+  - [Blog, posting, Markdown, Github, Git]
+
+date: 2022-08-06
+last_modified_at: 2022-08-06
+---
+
+<br>
+<br>
+
+어떤 이미지를 파비콘으로 등록할까 고민하다가 이모지를 활용하기로 했다.
+다양한 스타일의 이모지를 모두 찾을 수 있는 [emojipedia] 에서 원하는 이모지 파일을 받아왔다.
+
+<br>
+<br>
+
+### 1. 이미지를 파비콘으로 변환하기
+
+[favicon-generator] 사이트에 파일을 업로드하고 파비콘을 생성한다.
+
+![img01](https://user-images.githubusercontent.com/81657811/183226660-ceb02c5e-71d4-4373-bd12-06ffac2e914b.png)
+_파일을 올리고 버튼을 누르면 된다_
+
+![img02](https://user-images.githubusercontent.com/81657811/183226692-58dba7aa-1c59-46f9-8186-2d59d639cc47.png)
+_생성된 파일은 다운받고, 아래 코드는 복사해둔다_
+
+<br>
+<br>
+
+### 2. 파비콘 파일 업로드하기
+
+다운받은 파일은 압축을 해제하고, 폴더 이름을 favicon.ico로 바꿔둔다.
+
+![img03](https://user-images.githubusercontent.com/81657811/183226696-bb17f631-a6fe-4c73-bc7f-0dc0968e6575.png)
+_블로그 repo의 asset 안에 폴더째 드래그앤드랍해서 업로드한다._
+
+<br>
+<br>
+
+### 3. 파비콘 경로 설정하기
+
+\_includes > head > custom.html로 가서 복사해둔 파비콘 코드를 추가하고 경로를 설정해준다.
+
+![img04](https://user-images.githubusercontent.com/81657811/183226697-33d94ee0-de65-476e-91c9-aab497eb954a.png)
+_복사해둔 파비콘 코드를 복붙했다._
+
+각 줄의 href 속성에 파일의 경로 정보를 추가해준다.
+
+```html
+{{site.baseurl}}/assets/favicon.ico
+```
+
+![img06](https://user-images.githubusercontent.com/81657811/183226981-d3a76b7b-6448-4b22-b0f8-e90b3e3fea53.png)
+_이미지와 같이 경로를 설정한다._
+
+<br>
+<br>
+
+### 4. 몇분 후 등록된 파비콘을 확인한다!
+
+![img05](https://user-images.githubusercontent.com/81657811/183226699-14d9aa6f-81c7-4638-8100-135929d53247.png)
+_짠! 등록 완료!_
+
+<br>
+<br>
+
+참 쉽죠?
+
+[emojipedia]: https://emojipedia.org/
+[favicon-generator]: https://www.favicon-generator.org/
