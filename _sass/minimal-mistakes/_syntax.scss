@@ -16,7 +16,7 @@ figure.highlight {
   > pre,
   pre.highlight {
     margin: 0;
-    padding: 1em;
+    padding: 1.2em;
   }
 }
 
@@ -33,10 +33,10 @@ figure.highlight {
     /* line numbers*/
     &.gutter,
     &.rouge-gutter {
-      padding-right: 1em;
+      padding-right: 1.2em;
       width: 1em;
-      color: $base04;
-      border-right: 1px solid $base04;
+      color: $base03;
+      border-right: 1px solid $base03;
       text-align: right;
       // 라인이 복사되지 않게 한다.
       -webkit-touch-callout: none;
@@ -45,8 +45,6 @@ figure.highlight {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
-      // 임의 디자인 설정
-      opacity: .4;
     }
 
     /* code */
