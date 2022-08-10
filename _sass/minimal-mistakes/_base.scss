@@ -108,10 +108,11 @@ abbr[data-original-title] {
 
 blockquote {
   margin: 2em 1em 2em 0;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 1rem 1rem 0.25rem 1.5rem;
   font-style: italic;
   border-left: 0.25em solid $primary-color;
+  background-color: #f5f6f6;
+  border-radius: 8px;
 
   cite {
     font-style: italic;
@@ -127,7 +128,7 @@ blockquote {
 
 a {
   text-decoration: none;
-  
+
   &:focus {
     @extend %tab-focus;
   }
@@ -340,7 +341,6 @@ input[type="submit"],
   transition: $global-transition;
 }
 
-
 /* image caption css */
 img {
   width: 100%;
@@ -352,10 +352,9 @@ img + em {
   display: block;
   width: 100%;
   text-align: center;
-  font-size: .8rem;
-  color: #91939C;
+  font-size: 0.8rem;
+  color: #91939c;
   background-color: #f4f4f4;
   padding: 6px 16px 10px 16px;
   border-radius: 0 0 8px 8px;
 }
-
