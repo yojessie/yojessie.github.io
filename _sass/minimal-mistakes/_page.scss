@@ -114,19 +114,6 @@ body {
   li,
   dl {
     font-size: $type-size-5;
-    
-    :not(pre) > code {
-      padding: 0.2rem;
-      font-size: 0.8em;
-      background-color: #e9ecef;
-      border-radius: $border-radius;
-
-      &::before,
-      &::after {
-        letter-spacing: -0.2em;
-        content: "\00a0"; /* non-breaking space*/
-      }
-    }
   }
 
   /* paragraph indents */
@@ -153,7 +140,7 @@ body {
   }
 
   :not(pre) > code {
-    padding: 0.2rem;
+    padding: 0.15rem;
     font-size: 0.8em;
     background-color: #e9ecef;
     border-radius: $border-radius;
