@@ -124,6 +124,7 @@ body {
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
+    width: fit-content;
 
     /* sibling indentation*/
     @if $paragraph-indent == true {
